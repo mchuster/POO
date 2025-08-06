@@ -1,4 +1,4 @@
-# aula-04-08
+# diasDaSemana
 
 Projeto Maven criado automaticamente com Java 21 e JUnit 5.
 
@@ -6,7 +6,7 @@ Projeto Maven criado automaticamente com Java 21 e JUnit 5.
 
 ```bash
 mvn compile
-mvn exec:java -Dexec.mainClass="com.MHuster.App"
+mvn exec:java -Dexec.mainClass="com.mhuster.App"
 ```
 
 ## Como rodar testes

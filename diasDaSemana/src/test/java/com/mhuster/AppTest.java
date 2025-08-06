@@ -1,4 +1,4 @@
-package com.MHuster;
+package com.mhuster;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

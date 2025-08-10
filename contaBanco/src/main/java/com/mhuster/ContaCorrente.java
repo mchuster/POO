@@ -1,5 +1,7 @@
 package com.mhuster;
 
+import java.time.LocalDate;
+
 
 public class ContaCorrente {
     
@@ -7,8 +9,9 @@ public class ContaCorrente {
     private String nomeCorrentista;
     private double saldo;
     private boolean estado;
+    private OperacaoBancaria[] operacoes = new OperacaoBancaria[100];
 
-public ContaCorrente(String nomeCorrentista, int numeroConta){
+    public ContaCorrente(String nomeCorrentista, int numeroConta){
     if (nomeCorrentista.length() < 2){
         throw new IllegalArgumentException("Nome do Correntista invalido");
     }
@@ -35,6 +38,9 @@ public void verificarConta(){
     }
 }
 
+/**
+ * @param valor
+ */
 public void deposito(double valor){
     
     verificarConta();
@@ -44,6 +50,14 @@ public void deposito(double valor){
     }
     
     this.saldo = this.saldo + valor;
+    
+    OperacaoBancaria operacao = new OperacaoBancaria(valor, "Deposito", LocalDate.now());
+    for(int i = 0; i < operacoes.length; i++){
+        if(operacoes[i] == null){
+            operacoes[i] = operacao;
+            break;
+        }
+    }
 }
 
 public void sacar (double valor){
@@ -55,6 +69,15 @@ public void sacar (double valor){
     }
     
     this.saldo = this.saldo - valor;
+
+    OperacaoBancaria operacao = new OperacaoBancaria(valor, "Saque", LocalDate.now());
+        for (int i = 0; i < operacoes.length; i++) {
+            if (operacoes[i] == null) {
+                operacoes[i] = operacao;
+                break;
+
+        }
+    }
 }
 
 public void transferir(ContaCorrente contaDestino, double valor ){
@@ -73,7 +96,35 @@ public void transferir(ContaCorrente contaDestino, double valor ){
    contaDestino.deposito(valor);
     }
 
-public void desativar(ContaCorrente conta){
+public void desativarConta(){
         this.estado = false;
     }
+    public OperacaoBancaria[] getOperacoes() {
+        return operacoes;
+    }
+
+public OperacaoBancaria[] getOperacoesMes(int mes, int ano) {
+        OperacaoBancaria[] operacoesMes = new OperacaoBancaria[100];
+        int index = 0;
+
+    for (OperacaoBancaria operacao : operacoes) {
+            if (operacao != null && operacao.getData().getMonthValue() == mes && operacao.getData().getYear() == ano) {
+                operacoesMes[index++] = operacao;
+            }
+        }
+
+        return operacoesMes;
+    }
+
+public String exibirOperacoes() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Operações da conta ").append(numeroConta).append(":\n");
+        for (OperacaoBancaria operacao : operacoes) {
+            if (operacao != null) {
+                sb.append(operacao.toString()).append("\n");
+            }
+        }
+        return sb.toString();
+    }
+
 }

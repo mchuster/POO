@@ -25,7 +25,7 @@ public class AgenciaBancaria {
 
     public void cadastrarConta(ContaCorrente conta){
 
-         for(int i = 0; i < contas.length; i++){
+        for(int i = 0; i < contas.length; i++){
 
             if(conta.getnumeroConta() == contas[i].getnumeroConta()){
                 throw new IllegalArgumentException("numero de conta ja existente");
@@ -52,6 +52,18 @@ public class AgenciaBancaria {
 
     public void encerrarConta(int numero){
         
+        for(int i = 0; i < contas.length; i++){
+
+            if(contas[i].getnumeroConta() == numero){
+                contas[i].desativarConta();         
+            }
+        }
     }
 
+    public String getNome(){
+        return this.nome;
+    }
+    public int getNumero(){
+        return this.numero;
+    }
 }

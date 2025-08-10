@@ -71,5 +71,9 @@ public void transferir(ContaCorrente contaDestino, double valor ){
 
    this.saldo -= valor;
    contaDestino.deposito(valor);
-}
+    }
+
+public void desativar(ContaCorrente conta){
+        this.estado = false;
+    }
 }

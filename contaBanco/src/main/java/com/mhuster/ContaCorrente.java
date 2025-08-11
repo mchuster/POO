@@ -37,6 +37,9 @@ public void verificarConta(){
         throw new IllegalArgumentException("Conta inativa");
     }
 }
+public OperacaoBancaria[] getOperacaoes(){
+    return operacoes;
+}
 
 /**
  * @param valor
@@ -98,9 +101,6 @@ public void transferir(ContaCorrente contaDestino, double valor ){
 
 public void desativarConta(){
         this.estado = false;
-    }
-    public OperacaoBancaria[] getOperacoes() {
-        return operacoes;
     }
 
 public OperacaoBancaria[] getOperacoesMes(int mes, int ano) {

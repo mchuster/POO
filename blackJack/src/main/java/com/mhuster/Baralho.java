@@ -37,4 +37,14 @@ public class Baralho {
         
     }
 
+    @Override
+public String toString() {
+    StringBuilder sb = new StringBuilder();
+    for (Carta carta : cartas) {
+        sb.append(carta).append("\n");
+    }
+    return sb.toString();
+}
+
+
 }

@@ -4,36 +4,55 @@ public class Mao {
 
     private Carta carta1;
     private Carta carta2;
-    private Carta[] mao;
     private Baralho baralho = new Baralho();
     
-    public Carta[] pegaDeCima(){
-        if(carta1 == null){
+    public Carta pegaDeCima(){
+       if (carta1 == null) {
             carta1 = baralho.pegaDeCima();
-        }else if(carta2 == null){
+        } else if (carta2 == null) {
             carta2 = baralho.pegaDeCima();
-        }else{
-        throw new IllegalStateException("A mão já está cheia");
-    }
-
-    mao = new Carta[2];
-    mao[1] = carta1;
-    mao[2] = carta2;
-        
-     return mao;
+        }
+        return (carta2 != null) ? carta2 : carta1;
     }   
 
     
-    public void insereEmbaixo(){
-
+    public void insereEmbaixo(Carta carta){
+     
     }
 
+    public int valor(Carta carta){
+        int valor = switch(carta.getNumero()){
+            case AS -> 1;
+            case DOIS -> 2;
+            case TRES -> 3;
+            case QUATRO-> 4;
+            case CINCO-> 5;
+            case SEIS-> 6;
+            case SETE-> 7;
+            case OITO-> 8;
+            case NOVE-> 9;
+            case DEZ-> 10;
+            case VALETE-> 11;
+            case DAMA-> 12;
+            case REI-> 13;
+        };
+
+        return valor;
+    }
+    
     public int somatorio(){
-        return 0; 
+
+        int c1 = valor(carta1);
+        int c2 = valor(carta2);
+
+        return c1 + c2;
+        
     }
 
-    public String toString(){
-        // devolver uma mao com as cartas do Deck
-        return "oi";
+
+    @Override
+    public String toString() {
+        return "Mao [carta1=" + carta1 + ", carta2=" + carta2 + ", somatorio()=" + somatorio() + "]";
     }
+
 }

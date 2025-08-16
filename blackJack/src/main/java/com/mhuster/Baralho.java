@@ -1,5 +1,7 @@
 package com.mhuster;
 
+import java.util.Random;
+
 public class Baralho {
     
     private static final int TAM_BARALHO = 52;
@@ -34,7 +36,15 @@ public class Baralho {
     }
 
     public void embaralho(){
+        Random gerador = new Random();
         
+        for(int i = TAM_BARALHO - 1; i > 0; i--){
+        int j = gerador.nextInt(i + 1);
+        
+        Carta temp = cartas[i];
+        cartas[i] = cartas[j];
+        cartas[j] = temp;
+        }
     }
 
     @Override

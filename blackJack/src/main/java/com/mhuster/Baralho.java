@@ -26,6 +26,26 @@ public class Baralho {
         return this.cartaDeCima >= TAM_BARALHO;
     }
 
+    public Carta[] getCartas() {
+        return cartas;
+    }
+
+    public Carta[] getCartas(int quantidade) {
+        if (quantidade < 1 || quantidade > TAM_BARALHO - cartaDeCima) {
+            throw new IllegalArgumentException("Quantidade inválida de cartas solicitadas");
+        }
+        Carta[] cartasRetiradas = new Carta[quantidade];
+        for (int i = 0; i < quantidade; i++) {
+            cartasRetiradas[i] = pegaDeCima();
+        }
+        return cartasRetiradas;
+    }
+
+        public boolean isVazio() {
+            return cartaDeCima == TAM_BARALHO;
+    }
+
+
     public Carta pegaDeCima(){
         if(cartaDeCima == TAM_BARALHO){
             throw new IllegalStateException("Baralho vazio");

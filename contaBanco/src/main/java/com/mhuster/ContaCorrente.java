@@ -38,7 +38,7 @@ public void verificarConta(){
     }
 }
 public OperacaoBancaria[] getOperacaoes(){
-    return operacoes;
+    return this.operacoes;
 }
 
 /**

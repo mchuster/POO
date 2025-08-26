@@ -1,0 +1,10 @@
+Arroz, 25.90
+Feijão, 8.50
+Macarrão, 6.20
+Óleo, 7.30
+Açúcar, 5.10
+Café, 18.00
+Leite, 4.75
+Pão, 9.80
+Manteiga, 12.50
+Queijo, 22.00

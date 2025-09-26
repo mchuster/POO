@@ -1,6 +1,9 @@
 package org.example;
 
-public class Advogado {
+import java.util.Comparator;
+import java.util.List;
+
+public class Advogado implements Comparable<Advogado> {
     private int nroOAB;
     private String nome;
     private String especialidade;
@@ -30,5 +33,10 @@ public class Advogado {
                 ", nome='" + nome + '\'' +
                 ", especialidade='" + especialidade + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Advogado ad) {
+        return Integer.compare(this.nroOAB, ad.getNroOAB());
     }
 }

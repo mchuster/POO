@@ -5,11 +5,8 @@ import java.util.Comparator;
 
 public class ComparadorAdvogado implements Comparator<Advogado> {
     @Override
-    public int compare(Advogado d1, Advogado d2) {
-        if (d1.getNroOAB() > d2.getNroOAB()) {
-
-
-        }
-            return 0;
+    public int compare(Advogado ad1, Advogado ad2) {
+        return ad1.getNome().compareTo(ad2.getNome());
     }
 }
+

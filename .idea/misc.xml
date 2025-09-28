@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/blackJack/pom.xml" />
+        <option value="$PROJECT_DIR$/contaBanco/pom.xml" />
+        <option value="$PROJECT_DIR$/diasDaSemana/pom.xml" />
+        <option value="$PROJECT_DIR$/exercicio-meteoro/pom.xml" />
+        <option value="$PROJECT_DIR$/ex01-java-properties/pom.xml" />
+        <option value="$PROJECT_DIR$/ex02-java-properties/pom.xml" />
+        <option value="$PROJECT_DIR$/Exc-CadastrarProduto/pom.xml" />
+        <option value="$PROJECT_DIR$/exc-leitura-de-dados/pom.xml" />
+        <option value="$PROJECT_DIR$/AgenciaBancaria-EXCArrey-list/pom.xml" />
+        <option value="$PROJECT_DIR$/ex-heranca-funcionarios/pom.xml" />
+        <option value="$PROJECT_DIR$/ex-heranca-funcionarios-pt2/pom.xml" />
+        <option value="$PROJECT_DIR$/aula-Interface/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

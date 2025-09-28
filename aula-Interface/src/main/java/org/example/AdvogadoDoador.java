@@ -10,6 +10,7 @@ public class AdvogadoDoador extends Advogado implements DoadorDeSangue{
         if (tipoSanguinio == null) {
             throw new IllegalArgumentException("Tipo sanguíneo não pode ser null");
         }
+        this.tipoSanguinio = tipoSanguinio;
     }
 
 

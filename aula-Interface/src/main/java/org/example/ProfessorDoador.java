@@ -1,10 +1,16 @@
 package org.example;
 
 public class ProfessorDoador extends Professor implements DoadorDeSangue {
-    private TipoSanguinio tipoSanguinio;
+    private final TipoSanguinio tipoSanguinio;
 
     public ProfessorDoador(int matricula, String nome, int cargaHorariaSemanal, TipoSanguinio tipoSanguinio) {
         super(matricula, nome, cargaHorariaSemanal);
+
+        if(tipoSanguinio == null){
+            throw new IllegalArgumentException("Tipo sanguíneo não pode ser null ");
+        }
+
+        this.tipoSanguinio = tipoSanguinio;
     }
 
     @Override

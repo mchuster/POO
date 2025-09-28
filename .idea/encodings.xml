@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AgenciaBancaria-EXCArrey-list/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AgenciaBancaria-EXCArrey-list/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exc-CadastrarProduto/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Exc-CadastrarProduto/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aula-Interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aula-Interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/blackJack/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/blackJack/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/contaBanco/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/contaBanco/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diasDaSemana/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/diasDaSemana/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ex-heranca-funcionarios-pt1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ex-heranca-funcionarios-pt1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ex-heranca-funcionarios-pt2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ex-heranca-funcionarios-pt2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ex01-java-properties/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ex01-java-properties/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ex02-java-properties/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ex02-java-properties/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exc-leitura-de-dados/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exc-leitura-de-dados/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercicio-meteoro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/exercicio-meteoro/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

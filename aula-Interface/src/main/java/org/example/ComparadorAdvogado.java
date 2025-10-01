@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.Collections;
 import java.util.Comparator;
 
 public class ComparadorAdvogado implements Comparator<Advogado> {

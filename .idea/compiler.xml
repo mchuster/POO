@@ -15,6 +15,7 @@
         <module name="diasDaSemana" />
         <module name="blackJack" />
         <module name="ex02-java-properties" />
+        <module name="ex.cadastro-de-usuario" />
         <module name="exercicio-meteoro" />
         <module name="exc-leitura-de-dados" />
       </profile>

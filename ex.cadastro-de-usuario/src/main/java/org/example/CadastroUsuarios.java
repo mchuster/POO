@@ -2,14 +2,7 @@ package org.example;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Scanner;
-import java.util.StringTokenizer;
-import java.util.Comparator;
+import java.util.*;
 
 public class CadastroUsuarios implements Iterable<Usuario>{
     private List<Usuario> users;
@@ -53,19 +46,44 @@ public class CadastroUsuarios implements Iterable<Usuario>{
         int cont = 0;
         Iterator<Usuario> it = users.iterator();
         while (it.hasNext()){
+            Usuario user = it.next();
+            String[] split = user.getIp().split(".");
 
+            if (split.equals(nro)){
+                it.remove();
+                cont++;
+            }
         }
 
         return cont;
     }
     
     // Letra c
-    public boolean insere(String nome, String sobrenome, Usuario novo){
-        return false;
+    public void insere(String nome, String sobrenome, Usuario novo){
+        Iterator<Usuario> it = users.iterator();
+
+        while(it.hasNext()){
+            Usuario user = it.next();
+            if(nome.equals(user.getNome()) && sobrenome.equals(user.getSobrenome())){
+                users.add(users.indexOf(user) + 1, novo);
+            }
+        }
+
     }
     
     // Letra d 
     public void ordena(){
+        Collections.sort(users);
+    }
+
+    //letra e
+    public void random(){
+        Collections.shuffle(users);
+    }
+
+    //letra e
+    public void inverter(){
+        Collections.reverse(users);
     }
 
     @Override

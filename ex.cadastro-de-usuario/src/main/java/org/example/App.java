@@ -1,10 +1,7 @@
 package org.example;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class App {
 	public static void main(String[] args) {
@@ -37,5 +34,6 @@ public class App {
 			System.exit(0);
 		}
 	}
+
 
 }

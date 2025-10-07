@@ -8,11 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aula-Interface" />
         <module name="ex-heranca-funcionarios-pt2" />
-        <module name="ex.cadastro-de-usuario" />
         <module name="contaBanco" />
         <module name="AgenciaBancaria-EXCArrey-list" />
         <module name="ex01-java-properties" />
-        <module name="Exc-CadastrarProduto" />
         <module name="diasDaSemana" />
         <module name="blackJack" />
         <module name="ex02-java-properties" />
@@ -23,6 +21,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ex-heranca-funcionarios" target="24" />
+      <module name="ex.cadastro-de-usuario" target="24" />
+      <module name="Exc-CadastrarProduto" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>
